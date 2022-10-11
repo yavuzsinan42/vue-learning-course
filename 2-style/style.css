@@ -1,0 +1,14 @@
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+    display: inline-block;
+    margin-right:5px;
+  }
+  .yellow {
+    background-color: yellow;
+  }
+  .bordering{
+    border: 5px solid blue;
+    margin-top: 20px;
+  }
