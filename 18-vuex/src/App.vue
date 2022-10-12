@@ -6,15 +6,18 @@
         <hr>
         <app-result :counter="counter"></app-result>
         <hr>
+        <app-second-result></app-second-result>
         <app-counter @counterEvent="counter += $event"></app-counter>
       </div>
     </div>
   </div>
 </template>
 
-<script>
+<script >
   import Result from "./components/Result";
   import Counter from "./components/Counter";
+  import SecondResult from "./components/SecondResult"
+  
   export default {
     data(){
       return {
@@ -23,7 +26,8 @@
     },
     components: {
       appResult: Result,
-      appCounter: Counter
+      appCounter: Counter,
+      appSecondResult: SecondResult
     }
   }
 </script>

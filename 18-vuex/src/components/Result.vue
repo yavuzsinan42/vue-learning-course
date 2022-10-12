@@ -3,9 +3,14 @@
     <p class="counter-container"> Sayaç : {{ counter }}</p>
   </div>
 </template>
-<script>
+<script >
+  
   export default {
-    props : ["counter"]
+    computed : {
+      counter(){
+        return this.$store.getters.getDoubleCounter;
+      }
+    }
   }
 
 </script>

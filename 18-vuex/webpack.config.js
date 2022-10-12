@@ -36,14 +36,15 @@ module.exports = {
         options: {
           name: '[name].[ext]?[hash]'
         }
-      }
+      },
+      { test: /\.tsx?$/, loader: "ts-loader" }
     ]
   },
   resolve: {
     alias: {
       'vue$': 'vue/dist/vue.esm.js'
     },
-    extensions: ['*', '.js', '.vue', '.json']
+    extensions: ['*', '.js', '.vue', '.json',".ts", ".tsx"]
   },
   devServer: {
     historyApiFallback: true,
